@@ -1,0 +1,34 @@
+.dashboardPane {
+    -fx-pref-height: 709;
+    -fx-pref-width: 1057;
+    /*-fx-background-image: url('../images/A-Beginners-Guide-to-Building-Muscle-at-the-Gym.jpg');*/
+    /*-fx-background-repeat: no-repeat;*/
+    /*-fx-background-size: 1057 709;*/
+    /*-fx-background-position: center center;*/
+}
+
+.borderPane{
+    -fx-background-color: #f3f8fe;
+}
+
+.top-pane{
+    -fx-background-color:#132332 ;
+}
+.menu{
+    -fx-background-color:#17324D;
+    -fx-cursor: pointer;
+}
+.menu:hover{
+  -fx-background-color:#17324D;
+    -fx-cursor: pointer;
+}
+.side-menu{
+    -fx-background-color:#132332 ;
+}
+.btns {
+    -fx-background-color: #042B48;
+    -fx-background-radius: 10;
+}
+.test-hbox{
+    -fx-background-color: red;
+}

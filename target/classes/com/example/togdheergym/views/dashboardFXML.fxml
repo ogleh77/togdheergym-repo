@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+           prefWidth="600.0" styleClass="dashboardPane" stylesheets="@../styles/new/dashboardStyle.css"
+           xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.togdheergym.controllers.DashboardController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="borderPane">
+            <top>
+                <HBox prefHeight="45.0" prefWidth="1057.0" spacing="100.0" styleClass="top-pane"
+                      BorderPane.alignment="CENTER"/>
+            </top>
+            <left>
+                <VBox fx:id="sidePane" alignment="CENTER" prefHeight="621.0" prefWidth="77.0" spacing="10.0"
+                      styleClass="side-menu" BorderPane.alignment="CENTER">
+                    <children>
+                        <JFXButton onAction="#homeOpenHandler" styleClass="btns" text="-">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/icons8_home_50px_2.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets top="20.0"/>
+                            </VBox.margin>
+                        </JFXButton>
+                        <MenuButton mnemonicParsing="false" popupSide="RIGHT" styleClass="btns">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#monthlyRegHandler"
+                                          text="Monthly Registration"/>
+                                <MenuItem mnemonicParsing="false" onAction="#shortlyRegHandler"
+                                          text="Shortly Registration"/>
+                            </items>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/icons8_registration_30px.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </MenuButton>
+                        <StackPane>
+                            <children>
+                                <JFXButton onAction="#outdatedHandler" styleClass="btns" text="-">
+                                    <graphic>
+                                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icons8_notification_center_32px_1.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0"
+                                      prefWidth="20.0" styleClass="notification-circle">
+                                    <StackPane.margin>
+                                        <Insets left="15.0" top="-15.0"/>
+                                    </StackPane.margin>
+                                    <children>
+                                        <Label text="10" textFill="WHITE">
+                                            <font>
+                                                <Font name="Arial" size="11.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </StackPane>
+                        <MenuButton mnemonicParsing="false" onAction="#loanHandler" popupSide="RIGHT" styleClass="btns">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#monthlyRegHandler" text="Daily Reports"/>
+                                <MenuItem mnemonicParsing="false" onAction="#shortlyRegHandler" text="Monthly Reports"/>
+                                <MenuItem mnemonicParsing="false" onAction="#loanHandler" text="Loan"/>
+                                <MenuItem mnemonicParsing="false" onAction="#shortlyRegHandler" text="Recycle Bin"/>
+                            </items>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/icons8_service_50px.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </MenuButton>
+                        <JFXButton styleClass="btns" text="-">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/icons8_user_32px.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton styleClass="btns" text="-">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/icons8_settings_30px_2.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets top="100.0"/>
+                            </VBox.margin>
+                        </JFXButton>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets top="10.0"/>
+                    </BorderPane.margin>
+                </VBox>
+            </left>
+        </BorderPane>
+    </children>
+</StackPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="496.0" prefWidth="349.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.togdheergym.controllers.ShortlyRegController">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutY="-2.0" prefHeight="38.0" prefWidth="349.0" spacing="170.0" style="-fx-background-color: #132332;">
+            <children>
+                <Label text="Shotime registration" textFill="#fcebeb">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Label>
+                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../icons/icons8_cancel_50px.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <TextField fx:id="firstname" layoutX="33.0" layoutY="97.0" prefHeight="36.0" prefWidth="284.0" promptText="Enter first name" />
+        <Label layoutX="34.0" layoutY="69.0" prefHeight="16.0" prefWidth="90.0" text="first-name" textFill="#9e9898">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="lastName" layoutX="33.0" layoutY="168.0" prefHeight="36.0" prefWidth="284.0" promptText="Enter last name" />
+        <Label layoutX="34.0" layoutY="140.0" prefHeight="16.0" prefWidth="90.0" text="last-name" textFill="#9e9898">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="phone" layoutX="33.0" layoutY="238.0" prefHeight="36.0" prefWidth="284.0" promptText="Enter phone" />
+        <Label layoutX="34.0" layoutY="210.0" prefHeight="16.0" prefWidth="53.0" text="phone" textFill="#9e9898">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="107.0" layoutY="433.0" onAction="#onSubmitHandler" prefHeight="38.0" prefWidth="135.0" style="-fx-background-color: #132332;" text="Submit" textFill="#d7d3d3">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </JFXButton>
+        <TextField fx:id="amountPaid" layoutX="33.0" layoutY="305.0" prefHeight="36.0" prefWidth="135.0" promptText="amount paid" />
+        <Label layoutX="34.0" layoutY="282.0" prefHeight="16.0" prefWidth="53.0" text="amount" textFill="#9e9898">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Label>
+        <JFXCheckBox fx:id="poxing" layoutX="242.0" layoutY="388.0" text="poxing">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </JFXCheckBox>
+        <ComboBox fx:id="paidBy" layoutX="175.0" layoutY="305.0" prefHeight="36.0" prefWidth="135.0" promptText="Paid by" style="-fx-background-color: #132332;" />
+        <JFXRadioButton fx:id="male" layoutX="48.0" layoutY="388.0" text="Male" />
+        <JFXRadioButton fx:id="female" layoutX="124.0" layoutY="388.0" text="Female" />
+        <Label layoutX="41.0" layoutY="358.0" prefHeight="16.0" prefWidth="53.0" text="gender" textFill="#9e9898">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Label>
+    </children>
+    <effect>
+        <DropShadow height="37.12" radius="16.96" width="32.72" />
+    </effect>
+</AnchorPane>

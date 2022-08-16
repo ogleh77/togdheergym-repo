@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="338.0" style="-fx-border-color: dodgerblue;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fx:id="img" fill="DODGERBLUE" radius="27.0" stroke="BLACK" strokeType="INSIDE">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </Circle>
+      <VBox prefHeight="66.0" prefWidth="178.0" spacing="8.0">
+         <children>
+            <Label fx:id="username" text="Mohamed Ogleh" textFill="#363434">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="expdate" prefHeight="20.0" prefWidth="161.0" text="Exp date: 20/10/22" textFill="#4a4848">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <JFXButton onAction="#updateHandler" prefHeight="34.0" prefWidth="75.0" style="-fx-background-color: dodgerblue;" text="Update" textFill="#eee9e9">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </JFXButton>
+   </children>
+</HBox>

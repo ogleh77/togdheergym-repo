@@ -1,0 +1,7 @@
+.login-pane {
+    -fx-background-color: white;
+}
+.login-close:hover {
+    -fx-background-color: red;
+    -fx-cursor: hand;
+}
